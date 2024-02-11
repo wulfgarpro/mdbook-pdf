@@ -27,6 +27,8 @@ use regex::Regex;
 use std::io::{BufReader, BufWriter, Read, Write};
 use std::{ffi::OsStr, fs, io, path::PathBuf, thread, time::Duration};
 
+mod outline;
+
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     env_logger::init();
     lazy_static! {
